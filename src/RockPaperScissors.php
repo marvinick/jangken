@@ -1,47 +1,6 @@
 <?php
     class RockPaperScissors
     {
-          // private $rock;
-          // private $scissors;
-          // private $paper;
-          //
-          // function __construct($rock, $scissors, $paper)
-          // {
-          //
-          //   $this->rock = $rock;
-          //   $this->scissors = $scissors;
-          //   $this->paper = $paper;
-          // }
-          //
-          // function setRock($new_rock)
-          // {
-          //   $this->rock = $new_rock;
-          // }
-          //
-          // function getRock()
-          // {
-          //   return $this->rock;
-          // }
-          //
-          // function setScissors($new_scissors)
-          // {
-          //   $this->scissors = $new_scissors;
-          // }
-          //
-          // function getScissors()
-          // {
-          //   return $this->scissors;
-          // }
-          //
-          // function setPaper($new_paper)
-          // {
-          //   $this->paper = $new_paper;
-          // }
-          //
-          // function getPaper()
-          // {
-          //   return $this->paper;
-          // }
 
 
           function makeRockPaperScissors($first_input, $second_input) {
@@ -78,12 +37,6 @@
               }
 
           }
-
-          // static function getAll()
-          //   {
-          //     return $_SESSION['list_of_action'];
-          //   }
-
 
     }
 ?>
