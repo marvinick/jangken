@@ -16,7 +16,7 @@
             $result = $test_RockPaperScissors->makeRockPaperScissors($first_input, $second_input);
 
             //Assert
-            $this->assertEquals(array("Player 1"), $result);
+            $this->assertEquals("Player 1", $result);
         }
 
         function test_rock_scissors_draw()
@@ -30,7 +30,7 @@
             $result = $test_RockPaperScissors->makeRockPaperScissors($first_input, $second_input);
 
             //Assert
-            $this->assertEquals(array("Draw"), $result);
+            $this->assertEquals("Draw", $result);
         }
 
         function test_rock_scissors_none()
@@ -44,7 +44,7 @@
             $result = $test_RockPaperScissors->makeRockPaperScissors($first_input, $second_input);
 
             //Assert
-            $this->assertEquals(array("Please select an option from both menus"), $result);
+            $this->assertEquals("Please select an option from both menus", $result);
         }
     }
 

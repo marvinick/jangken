@@ -1,47 +1,88 @@
 <?php
     class RockPaperScissors
     {
+          // private $rock;
+          // private $scissors;
+          // private $paper;
+          //
+          // function __construct($rock, $scissors, $paper)
+          // {
+          //
+          //   $this->rock = $rock;
+          //   $this->scissors = $scissors;
+          //   $this->paper = $paper;
+          // }
+          //
+          // function setRock($new_rock)
+          // {
+          //   $this->rock = $new_rock;
+          // }
+          //
+          // function getRock()
+          // {
+          //   return $this->rock;
+          // }
+          //
+          // function setScissors($new_scissors)
+          // {
+          //   $this->scissors = $new_scissors;
+          // }
+          //
+          // function getScissors()
+          // {
+          //   return $this->scissors;
+          // }
+          //
+          // function setPaper($new_paper)
+          // {
+          //   $this->paper = $new_paper;
+          // }
+          //
+          // function getPaper()
+          // {
+          //   return $this->paper;
+          // }
 
 
           function makeRockPaperScissors($first_input, $second_input) {
-              $result = array();
+
               if ($first_input == "rock" && $second_input == "scissors") {
-                array_push($result, "Player 1");
+                return "Player 1";
               }
 
               elseif($first_input == "rock" && $second_input == "paper") {
-                array_push($result, "Player 2");
+                return "Player 2";
               }
 
               elseif($first_input == "scissors" && $second_input == "rock") {
-                array_push($result, "Player 2");
+                return "Player 2";
               }
 
               elseif($first_input == "scissors" && $second_input == "paper") {
-                array_push($result, "Player 1");
+                return "Player 1";
               }
 
               elseif($first_input == "paper" && $second_input == "scissors") {
-                array_push($result, "Player 2");
+                return "Player 2";
               }
 
               elseif($first_input == "paper" && $second_input == "rock") {
-                array_push($result, "Player 1");
+                return "Player 1";
               }
 
               elseif($first_input == $second_input) {
-                array_push($result, "Draw");
+                return "Draw";
               }
               elseif($first_input == null || $second_input == null) {
-                array_push($result, "Please select an option from both menus");
+                return "Please select an option from both menus";
               }
-              return $result;
+
           }
 
-          static function getAll()
-            {
-                return $_SESSION['rock_paper_scissors'];
-            }
+          // static function getAll()
+          //   {
+          //     return $_SESSION['list_of_action'];
+          //   }
 
 
     }
