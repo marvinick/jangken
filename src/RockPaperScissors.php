@@ -2,6 +2,7 @@
     class RockPaperScissors
     {
 
+
           function makeRockPaperScissors($first_input, $second_input) {
               $result = array();
               if ($first_input == "rock" && $second_input == "scissors") {
@@ -36,5 +37,12 @@
               }
               return $result;
           }
+
+          static function getAll()
+            {
+                return $_SESSION['rock_paper_scissors'];
+            }
+
+
     }
 ?>

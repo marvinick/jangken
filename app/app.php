@@ -13,7 +13,7 @@
   $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__."/../views"));
 
   $app->get("/", function() use ($app) {
-    return $app['twig']->render('front_page.html.twig', array('artists' => RockPaperScissors::getAll()));
+    return $app['twig']->render('front_page.html.twig',  => RockPaperScissors::getAll()));
   });
 
   $app->post('/result', function() use ($app) {
