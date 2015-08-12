@@ -1,0 +1,18 @@
+-----------CASE 0------------
+WHAT IT DOES: it gives a prompt for both players to select rock, paper or scissors from dropdown menus.
+
+INPUT 1: rock
+INPUT 2: scissors
+OUTPUT: Player One Wins!
+-----------CASE 1------------
+WHAT IT DOES : it determnines when both players have selected the same option, and gives a different output accordingly.
+
+INPUT 1: rock
+INPUT 2: rock
+OUTPUT: Draw!
+-----------CASE 2------------
+WHAT IT DOES: it determines when there is input missing and prints different output accordingly.
+
+INPUT 1: paper
+INPUT 2: (none)
+OUTPUT: Please select an option from both menus. 
