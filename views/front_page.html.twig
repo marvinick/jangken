@@ -2,8 +2,10 @@
 <head>
     <title>Rock Paper Scissors</title>
 </head>
-<body>
-    <h1>Rock Paper Scissors</h1>
+<body style="background-color:silver; text-align: center">
+    <h1>Rock Paper Scissors</h1><br>
+    <img alt="Rock-Paper-Scissors" height="200" src="img/copy-of-rock-paper-scissors.jpg" width="460"><br>
+
 
     <ul>
 
@@ -14,26 +16,28 @@
 
 
     <form action='/result' method='post'>
-        <label for='player1'>Player One</label>
+        <label for='player1'>Player One</label><br>
+        <!--
         <input id='player1' name='player1' type='text'>
-        <!--
-        <select>
+      -->
+        <select id='player1' name='player1'>
           <option value="rock">Rock</option>
           <option value="scissors">Scissors</option>
           <option value="paper">Paper</option>
         <select>
-        -->
-
-        <label for='player2'>Player 2</label>
+          <br>
+          <br>
+        <label for='player2'>Player Two</label><br>
+        <!--
         <input id='player2' name='player2' type='text'>
-        <!--
-        <select>
+      -->
+        <select id='player2' name='player2'>
           <option value="rock">Rock</option>
           <option value="scissors">Scissors</option>
           <option value="paper">Paper</option>
         <select>
-        -->
-
+          <br>
+          <br>
         <button type='submit'>Draw</button>
     </form>
 </body>

@@ -158,6 +158,20 @@
             //Assert
             $this->assertEquals("Please select an option from both menus", $result);
         }
+
+        function test_null()
+        {
+          //Arrange
+          $test_RockPaperScissors = new RockPaperScissors;
+          $first_input = null;
+          $second_input = null;
+
+          //Act
+          $result = $test_RockPaperScissors->makeRockPaperScissors($first_input, $second_input);
+
+          //Assert
+          $this->assertEquals("Please select an option from both menus", $result);
+        }
     }
 
 ?>

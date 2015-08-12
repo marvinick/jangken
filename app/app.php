@@ -23,7 +23,7 @@
     return $app['twig']->render('front_page.html.twig');
   });
 
-  $app->post('/result', function() {
+  $app->post('/result', function() use ($app) {
 
     //Arrange
     $real_RockPaperScissors = new RockPaperScissors;
@@ -32,8 +32,8 @@
     $result = $real_RockPaperScissors->makeRockPaperScissors($_POST['player1'], $_POST['player2']);
 
 
-    //return $app['twig']->render('result_page.html.twig');
-    return "$result";
+    return $app['twig']->render('result_page.html.twig') $result;
+    // return "$result";
   });
 
   return $app;
